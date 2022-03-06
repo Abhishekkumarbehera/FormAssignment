@@ -1,0 +1,49 @@
+.sign-up {
+    margin: 100px auto;
+    width: 300px;
+    padding: 25px;
+    box-shadow: 0px 3px 14px 9px #eee;
+}
+
+.header {
+    margin: 0 0 15px 0;
+    border-bottom: 1px solid;
+    text-align: center;
+    text-transform: uppercase;
+    color:#428bca;
+}
+
+label {
+    font-size: 20px;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    border-radius: 2px;
+    border: 1px solid #9d9d9d;
+}
+
+.button-box {
+    text-align: center;
+}
+
+.button-signup {
+    padding: 10px 25px;
+    margin: 15px 0;
+    background: #428bca;
+    border: none;
+    color: white;
+    width: 100%;
+}
+
+.signin-text {
+    margin: 0;
+    text-align: right;
+    font-size: 14px;
+}
+
+.signin-link{
+    color: #428bca;
+}

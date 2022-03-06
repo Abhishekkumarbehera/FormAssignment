@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../calculator.css">
+    <script src="../calculator.js"></script>
+    <title>calculator</title>
+</head>
+<body>
+    <div class="block">
+        <h3 class="header">calculator</h3>
+        <div>
+            <label>Input1:</label>
+        </div>
+        <div>
+            <input class="inp" id="n1" type="text">
+        </div>
+        <div>
+            <label>Input2:</label>
+        </div>
+        <div>
+            <input class="inp" id="n2" type="text">
+        </div>
+        <div>
+            <label>Input3:</label>
+        </div>
+        <div>
+            <input class="inp" id="n3" type="text">
+        </div><br>
+        <div>
+            <label>Action:</label>
+            <select id="operators" class="inp">
+                <option value="add">addition</option>
+                <option value="sub">subtraction</option>
+                <option value="mul">multiplication</option>
+            </select>
+        </div><br>
+        <div>
+            <input type="button" value="Result" id="btn" onclick="cal()">
+        </div><br>
+        </div>
+    <div id="result">
+    </div>  
+</body>
+</html>
