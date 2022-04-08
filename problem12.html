@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>count all the Palindromic numbers till 'N' </title>
+    
+    </head>
+    <body>
+        <script type="text/javascript">
+           // Javascript implementation of the approach
+
+           // Function to return the count of N-digit palindrome numbers
+           function nDigitPalindromes (n)
+           {
+               return (9 * Math.pow(10, parseInt((n - 1) / 2)));
+           }
+           // Driver code
+           var n = 2;
+           document.write(nDigitPalindromes(n));
+        </script>
+    </body>
+    </html>

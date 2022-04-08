@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>left rotated array</title>
+    
+    </head>
+    <body>
+        <script type="text/javascript">
+           // JavaScript implementation of left rotation of an array K number of times
+           // Function to leftRotate array multiple times
+           function leftRotate(arr, n, k) {
+               /* To get the starting point of rotated array */
+               let mod = k % n;
+
+               // Prints the rotated array from start position
+               for (let i = 0; i < n; i++)
+                   document.write((arr[(mod + i) % n]) + " ");
+
+                   document.write("\n");
+           }
+           // Driver Code
+           let arr = [7, 3, 1, 2, 3, 4, 5, 6, 7];
+           let n = arr.length;
+
+           let k = 2;
+           // Function Call
+           leftRotate(arr, n, k);
+           document.write("<br>");
+
+           k = 4;
+           // Function Call
+           leftRotate(arr, n, k);
+        </script>
+    </body>
+    </html>

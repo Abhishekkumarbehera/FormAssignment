@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluate the post expression and print the result</title>
+    
+    </head>
+    <body>
+        <script type="text/javascript">
+           this.postfixEval = function(postfixArray){
+               var stack = new Stack();
+
+               for ( element of postfixArray){
+                   console.log("element: " + element);
+
+                   if (isNaN(element)){
+                       var x = stack.pop();
+                       var y = stack.pop();
+                       console.log("var x/y: " + x + " " + y + "element:" + element) ;
+                       if (element == "+"){
+                           result = (y+x);
+                           console.log("Expected Result: " + result)
+                           stack.push(y + x);
+                       } else if (element == '-'){
+                           stack.push(y - x);
+                       } else if (element == '*'){
+                           stack.push(y * x);
+                       } else if (element == '/'){
+                           stack.push(y / x);
+                       }
+                           
+                   } else {
+                       stack.push( parseFloat(element) );
+                   }
+               }
+               //final check for non numbers within the stack
+               var returnValue = null;
+               while( !stack.isEmpty() ){
+                   stack.print();
+                   var element = stack.pop();
+                   if(isNaN(element)){
+                       continue;
+                   } else{
+                       returnValue = element;
+                   }
+               }
+               return returnValue;
+           }
+        </script>
+    </body>
+    </html>

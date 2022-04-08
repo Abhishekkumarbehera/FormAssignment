@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Days in a Month</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body style="text-align:center;">
+    <h1 style="color: green;"></h1>
+    <p id="GFG_UP" style="font-size: 15px; font-weight: bold;"></p>
+    <button onclick="GFG_Fun()">click here</button>
+    <p id="GFG_UP" style="color: green; font-size: 15px; font-weight: bold;"></p>
+    <script type="text/javascript">
+        var up = document.getElementById('GFG_UP');
+        up.innerHTML = "Click on button to get the " + "number of days in specified month";
+        var down = document.getElementById('GFG_DOWN');
+        function daysInMonth (month, year) {
+            return new Date(year, month, 0).getDate();
+        }
+        function GFG_Fun() {
+            var date = new Date();
+            var month = 2;
+            var year = 2020;
+            down.innerHTML = "Number of days in " + month + "nd month of the year " + year +" is "+ daysInMonth(month, year);
+        }
+        
+      </script>
+  </body>
+</html>
